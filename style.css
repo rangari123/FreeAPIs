@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-color: #fbfdff;
+  /* height: auto; */
+}
+img {
+  height: 50px;
+  width: 50px;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  flex-direction: column;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+header {
+  background-color: #fff;
+  font-size: 0.8rem;
+  width: 550px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.title {
+  text-align: center;
+}
+.search {
+  background-color: #ffff;
+  /* width: 500px; */
+  text-align: center;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  border: 2px solid #f4f5f5;
+}
+.search i {
+  font-size: 1.5rem;
+  margin: auto 10px;
+  background-color: #fff;
+  padding: 5px;
+}
+#search {
+  height: 50px;
+  width: 400px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  color: black;
+}
+
+/* hover */
+.bookmark {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  bottom: 0;
+  left: 0px;
+  width: 100%;
+  height: 50px;
+  display: none;
+  transition: transform 0.2s ease;
+  text-align: center;
+  box-shadow: -2px -2px 5px rgb(204, 198, 198);
+}
+.bookmark .show {
+  display: block;
+}
+.bookmark .book {
+  color: #535266;
+  margin-right: 20px;
+  text-align: center;
+}
+.bookmark .book i {
+  margin-right: 10px;
+}
+.bookmark .access {
+  background-color: #141a31;
+  padding: 0px 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+/* hover */
+.section {
+  display: grid;
+  place-content: center;
+  grid-auto-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: row;
+  width: fit-content;
+  gap: 10px;
+  margin: 20px 20px;
+}
+
+.content {
+  display: flex;
+}
+.hunter {
+  width: 350px;
+  height: 200px;
+  margin: auto auto;
+  display: flex;
+  background-color: #ffffff;
+  padding: 20px;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 3px 3px 5px #dddbdb;
+  color: #141520;
+}
+.hunter:hover {
+  box-shadow: 3px 3px 5px #b9b8b8;
+  transition: 0.2s ease;
+}
+
+.hunter img {
+  margin-right: 20px;
+}
+h4 {
+  font-weight: bold;
+}
+.subtag {
+  font-size: 0.8rem;
+  color: #8d8d8f;
+  margin: 5px auto;
+}
+
+/* media */
+
+@media (max-width: 1100px) {
+  .title {
+    width: 300px;
+    text-align: center;
+    margin: auto auto;
+  }
+  .search {
+    width: 400px;
+    display: flex;
+    font-size: 0.8rem;
+  }
+  .grid h3 {
+    text-align: center;
+  }
+  body {
+    display: grid;
+    align-items: center;
+    flex-direction: column;
+    /* margin: 100px; */
+    justify-content: center;
+    background-color: #ffffff;
+  }
+
+  .section {
+    place-content: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .title {
+    width: 300px;
+    text-align: center;
+    margin: auto auto;
+  }
+  .search {
+    width: 200px;
+    display: flex;
+    font-size: 0.8rem;
+  }
+  .grid h3 {
+    text-align: center;
+  }
+  body {
+    display: grid;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    /* margin: 100px; */
+    justify-content: center;
+  }
+
+  .section {
+    place-content: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* 
+@media (min-width: 600px) {
+  body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px;
+  }
+  .section {
+    place-content: center;
+
+    grid-template-columns: repeat(1, 1fr);
+  }
+} */
+
+/* @media (min-width: 1000px) {
+  body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px;
+  }
+  .section {
+    place-content: center;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+} */
+
+/* @media (min-width: 1200px) {
+  .section {
+    place-content: center;
+
+    grid-template-columns: repeat(3, 1fr);
+  }
+} */
